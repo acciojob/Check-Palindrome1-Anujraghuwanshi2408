@@ -1,20 +1,18 @@
 // complete the given function
- let isPalindrome = true;
- let start = 0;
-let end  = str.length-1;
-function palindrome(str){
-	str=str.toLowerCase();
-	while(start<=end && isPalindrome){
-		if(str[start] != str[end]){
-			// isPalindrome = false;
-			return false;
-		}
-		start++;
-		end--;
+	let strJoin = str.split(' ').join('').toLowerCase();
+	let isPalindrome = true;
+	let i = 0, j = strJoin.length-1;
+	while (i <= j && isPalindrome) {
+	if(strJoin[i] !== strJoin[j]){
+	isPalindrome = false;
 	}
-	return true;
-		// (isPalindrome ? true:false);
-
-}
+	i++;
+	j--;
+	}
+	
+	return isPalindrome;
+	}
+	
+	}
 // console.log(palindrome(str));
 module.exports = palindrome
