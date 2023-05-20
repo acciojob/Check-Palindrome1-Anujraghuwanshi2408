@@ -6,13 +6,15 @@ function palindrome(str){
 	str=str.toLowerCase();
 	while(start<=end && isPalindrome){
 		if(str[start] != str[end]){
-			isPalindrome = false;
+			// isPalindrome = false;
+			return false;
 		}
 		start++;
 		end--;
 	}
-	return (isPalindrome ? true:false);
+	return true;
+		// (isPalindrome ? true:false);
 
 }
-console.log(palindrome(str));
+// console.log(palindrome(str));
 module.exports = palindrome
