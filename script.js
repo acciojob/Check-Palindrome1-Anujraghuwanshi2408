@@ -3,6 +3,7 @@
  let start = 0;
 let end  = str.length-1;
 function palindrome(str){
+	str=str.toLowerCase();
 	while(start<=end && isPalindrome){
 		if(str[start] != str[end]){
 			isPalindrome = false;
